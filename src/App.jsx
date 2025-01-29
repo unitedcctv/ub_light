@@ -1,25 +1,34 @@
-import { useState } from 'react'
+import React from 'react'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import 'leaflet/dist/leaflet.css'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+const position = [52.4967277, 13.4401145]
 
+function App() {
   return (
     <>
       <h1>dlab</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        <MapContainer 
+          center={position} 
+          zoom={13} 
+          style={{ height: '400px', width: '400px' }}
+        >
+          <TileLayer
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          />
+          <Marker position={position}>
+            <Popup>
+              dlab location
+            </Popup>
+          </Marker>
+        </MapContainer>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
 
 export default App
+
