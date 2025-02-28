@@ -30,7 +30,7 @@ function App() {
           />
           <Marker position={position} icon={customIcon}>
             <Popup>
-              dlab location
+              Urban Barnacle, combating throwaway furniture.
             </Popup>
           </Marker>
         </MapContainer>
