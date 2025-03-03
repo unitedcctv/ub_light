@@ -9,7 +9,7 @@ const position = [52.4969000, 13.4403000]
 
 const customIcon = L.icon({
   iconUrl: markerIcon,
-  iconSize: [144, 144],
+  iconSize: [72, 72],
   iconAnchor: [12, 41],
   popupAnchor: [1, -34]
 })
@@ -17,7 +17,7 @@ const customIcon = L.icon({
 function App() {
   return (
     <>
-      <h1>dlab</h1>
+      <h1>Urban Barnacle</h1>
       <div className="card">
         <MapContainer 
           center={position} 
