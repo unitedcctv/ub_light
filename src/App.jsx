@@ -9,7 +9,7 @@ const position = [52.4969000, 13.4403000]
 
 const customIcon = L.icon({
   iconUrl: markerIcon,
-  iconSize: [100, 50],
+  iconSize: [144, 144],
   iconAnchor: [12, 41],
   popupAnchor: [1, -34]
 })
