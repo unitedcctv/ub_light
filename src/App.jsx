@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
 import './App.css'
-import markerIcon from './theme/marker.png'
+import markerIcon from './assets/ub.png'
 
 const position = [52.4969000, 13.4403000]
 
